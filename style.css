@@ -1,0 +1,230 @@
+/* home en body*/
+
+*{
+    margin: 0;          /*ruimte om te verplaatsen, in dit geval zorgt het voor geen witte "borders"*/
+    padding: 0;
+}
+
+html,body{
+    width: 100%;                /*de ruimte die de website word gegeven samen met height*/
+    height: 100%;
+    font-size: 14px;            /*grootte van het lettertype*/
+}
+
+.background{
+    width: 100%;                      /*ruimte dat de achtergrond foto in neemt samen met height*/
+    height: 100%;
+    background-image: url(../img/cold-conifer-desktop-wallpaper-1287081.jpg);      /*achtergrond foto*/
+    background-repeat: no-repeat;   /* dit zorgt ervoor dat de achtergrondfoto er maar 1 keer in het groot komt te staan en niet 20 kleine foto's*/
+    background-size: cover;         /* dit is de functie die word gegeven aan de foto, in dit geval moet het gewoon de achtergrond zijn en blijven*/
+    position: relative;             /* dit zorgt ervoor dat de achtergrond blijft staan en niet mee verschuift */
+    overflow-y: auto;               /* dit zorgt ervoor dat de foto niet in de breedte verschuift*/
+}
+
+/* menu*/
+.nav{
+    width: 18,2%;               /* de ruimte dat het menu in neemt, weer samen met height*/
+    height: auto;
+    position: absolute;         /*menu die op de site zit, niet eronder*/
+    top: 20%;                   /* de ruimte dat het menu naar beneden is verplaatst */
+    left: 0;                    /* de ruimte dat het menu naar links is verplaatst */
+}
+
+.nav a{
+    text-decoration: none;              /*personalisatie van het menu, zorgt ervoor dat er geen lijntje onder komt*/
+    font-size: 28px;                    /*grootte*/
+    font-family: sans-serif;            /*lettertype*/
+    font-weight: bold;                  /*letterype dikte*/
+    height: 90px;
+    margin: 5px 0;
+    float: left;                        /*waar het menu staat*/
+    display: inline-block;              /*hoe het menu staat*/
+    background-color: black;            /*achtergrond kleur*/
+    color: white;                       /*lettertype kleur*/
+    line-height: 90px;
+    text-align: center;                 /*waar de tekst staat*/
+    transition: 300ms;                  /* de snelheid waarop het menu uitschuift*/
+}
+
+a.active, .nav a:hover{
+    background-color: white;            /* achtergrond kleur van het menu van de pagina waar je op zit*/
+    color: black;                       /* de kleur van de letters het menu van de pagina waar je op zit */
+    width: 100%;
+}
+
+.a{
+    width: 95%;                         /*wijdte van een colum van het menu*/
+}
+
+.b{
+    width: 85%;
+}
+
+.c{
+    width: 75%;
+}
+
+.d{
+    width: 95%;
+}
+
+/*naam*/
+
+.content{
+    position: absolute;
+    width: 930px;
+    min-height: 350px;                          /*de minimale hoogte waar het html staat*/
+    height: auto;
+    right: 0; 
+    top: 10%;
+    /*background-color: red;*/
+}
+
+.home{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-family: verdana;               /* lettertype tekst*/
+    text-transform: uppercase;          /* hoe de tekst eruit ziet, in dit geval zijn het allemaal hoofdletters*/
+}
+
+.home h1{
+    font-size: 50px;
+    padding-right: 190px;
+    border-bottom: 1px solid white;        /*De lijn onder mijn naam */
+    text-transform: uppercase;
+}
+
+.home h3{
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+/* foto galerij*/
+
+.galerijtekst{
+    position: absolute;
+    width: 850px;                        
+    height: auto;
+    right: 0; 
+    top: 15%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    /*background-color: red;*/
+}
+
+.container{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    padding; 0 60px;
+    display: flex;
+}
+
+.box1{
+    padding-right: 20px;
+}
+
+.box2{
+    padding-right: 20px;
+}
+
+.container2{
+    position: absolute;
+    right: 0;
+    top: 365px;
+    padding; 0 60px;
+    display: flex;
+}
+
+.box3{
+    padding-right: 20px;
+}
+
+.box4{
+    padding-right: 20px;
+}
+
+.box5{
+    padding-right: 20px;
+}
+/*Over mezelf*/
+
+.overmezelf{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    color: white;
+    font-family: century gothic;
+    text-transform: uppercase; 
+    padding: 0 60px;
+    text-align: left;                   /*Waar de tekst staat */
+}
+
+.overmezelf p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 15px; 
+}
+
+.tabel{
+    position: absolute;
+    width: 960px;
+    min-height: 150px;
+    height: auto;
+    right: 0;
+    top: 55%;
+}
+
+td{
+    padding-left: 0;
+    color: white;
+    font-size: 16px;
+    font-family: century gothic;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+}
+
+th{
+    font-family: century gothic;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.caption{
+    color: white;
+    font-family: century gothic;
+    font-size: 16px;
+    text-transform: uppercase;
+    right: 0;
+    padding: 0 0;
+}
+
+/*contact*/
+
+.formulier{
+    position: absolute;
+    right: 350px;
+    top: 150px;
+    color: white;
+    font-family: century gothic;
+    text-transform: uppercase; 
+    padding: 0 60px;
+    text-align: left;
+}
+
+.contactme{
+    position: absolute;
+    right: 440px;
+    top: 120px;
+    color: white;
+    font-family: century gothic;
+    text-transform: uppercase; 
+    padding: 0 60px;
+    text-align: left;
+}
